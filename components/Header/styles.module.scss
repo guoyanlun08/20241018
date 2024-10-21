@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  // height: 70px;
+}
+
+.headerLogo {
+  padding: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: Tiempos, serif;
+  display: flex;
+  align-items: center;
+}
+
+.desktopNav a {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.mobileBtn {
+  display: block;
+  appearance: none;
+  border: none;
+  background: none;
+  margin: 0px;
+  padding: 10px;
+  pointer-events: all;
+  svg {
+    display: block;
+    pointer-events: none;
+    width: 20px;
+    height: auto;
+  }
+}
+
+.mobileSelectZoneDefault {
+  position: absolute;
+  top: 59px;
+  width: 100%;
+  height: auto;
+  background: rgb(255, 255, 255);
+  border-top: 1px solid rgb(229, 227, 218);
+  transition: 0.1s;
+  opacity: 0;
+  pointer-events: none;
+  .mobileSelectItem {
+    display: block;
+    padding: 10px;
+    a {
+      display: block;
+      padding: 10px;
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+}
+
+.mobileSelectZoneOpen {
+  opacity: 1;
+  pointer-events: all;
+}

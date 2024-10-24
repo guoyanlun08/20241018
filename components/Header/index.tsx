@@ -1,12 +1,10 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import MobileSelectZone from './MobileSelectZone';
 import styles from './styles.module.scss';
 
-type Props = {};
-
-function Header({}: Props) {
+function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (

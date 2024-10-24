@@ -1,6 +1,5 @@
-type Props = {};
 
-function FooterInfo({}: Props) {
+function FooterInfo() {
   return (
     <div className="mt-16 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">
       <div className="md:grid md:grid-cols-3 md:gap-8">

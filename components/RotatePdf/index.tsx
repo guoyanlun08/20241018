@@ -9,9 +9,7 @@ import styles from './rotate.module.scss';
 
 export type PDFFile = string | File | null;
 
-type Props = {};
-
-function RotatePdf({}: Props) {
+function RotatePdf() {
   const uploadRef = useRef<UploadRef | null>(null);
   const displayPdf = useRef<DisplayPdfRef | null>(null);
 

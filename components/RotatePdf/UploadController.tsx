@@ -53,4 +53,6 @@ const UploadController = forwardRef<UploadRef, Props>(({ onChange }, ref) => {
   );
 });
 
+UploadController.displayName = 'UploadController';
+
 export default UploadController;

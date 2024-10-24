@@ -24,9 +24,7 @@ if (typeof Promise.withResolvers === "undefined") {
   }
 }
 
-interface Props {}
-
-const RotatePdfPage = async ({ params }: { params: Props }) => {
+const RotatePdfPage = async () => {
   return (
     <div className="container mx-auto py-20 space-y-5">
       <div className="flex flex-col text-center !mb-10 space-y-5">

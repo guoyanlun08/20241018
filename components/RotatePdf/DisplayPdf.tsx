@@ -6,10 +6,7 @@ import { PDFFile } from '.';
 
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@4.4.168/legacy/build/pdf.worker.min.mjs`;
 
 const options = {
   cMapUrl: '/cmaps/',
@@ -97,7 +94,7 @@ const DisplayPdf = forwardRef<DisplayPdfRef, Props>(
                     pageNumber={index + 1}
                     renderTextLayer={false}
                     renderAnnotationLayer={false}
-                    onRenderSuccess={(page) => {
+                    onRenderSuccess={() => {
                       countNumPages.current++;
                       if (countNumPages.current === numPages) {
                         console.log('全部页面渲染完毕');
@@ -117,5 +114,7 @@ const DisplayPdf = forwardRef<DisplayPdfRef, Props>(
     );
   }
 );
+
+DisplayPdf.displayName = 'DisplayPdf';
 
 export default DisplayPdf;

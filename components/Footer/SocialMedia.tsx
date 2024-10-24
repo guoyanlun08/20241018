@@ -1,7 +1,6 @@
 
-type Props = {};
 
-function SocialMedia({}: Props) {
+function SocialMedia() {
   return (
     <div className="space-y-8">
       <img className="h-7" src="/favicon.ico" alt="PDF.ai logo" />

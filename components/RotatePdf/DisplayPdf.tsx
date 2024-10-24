@@ -6,7 +6,10 @@ import { PDFFile } from '.';
 
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/legacy/build/pdf.worker.min.mjs', import.meta.url).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
 
 const options = {
   cMapUrl: '/cmaps/',

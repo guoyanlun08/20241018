@@ -1,4 +1,10 @@
-## Getting Started
+#
+
+## 确保环境
+
+Node.js 18
+
+## 开始
 
 构建依赖
 

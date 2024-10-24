@@ -117,6 +117,8 @@ function RotatePdf() {
           );
         }
       });
+
+      pdfInstance.deletePage(1);
       pdfInstance.save('rotatePdf.pdf');
     }
   }

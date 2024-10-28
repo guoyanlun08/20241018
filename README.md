@@ -24,3 +24,7 @@ npm run dev
 
 创建和下载 PDFs 文件: [jspdf 文档](https://artskydj.github.io/jsPDF/docs/jsPDF.html)
 展示已有 PDFs: [react-pdf 文档](https://github.com/wojtekmaj/react-pdf)
+
+## 部署页面
+
+[旋转 pdf 页面](https://20241018.vercel.app/rotate-pdf)
